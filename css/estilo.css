@@ -1,0 +1,159 @@
+.INICIO{ color: gray;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 4rem;
+}
+.Titulo{
+ text-align: center;
+}
+h1{
+    color: gray;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 3rem;
+}
+body{
+    background-color: black;
+}
+h2{
+    color: rgb(63, 63, 63);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+}
+h3{
+    color: rgb(63, 63, 63);
+    font-size: 1rem;
+   font-style: normal;
+}
+td{
+    list-style-type: none;
+    padding: 20px;
+}
+.Logo{
+width: 15rem;
+}
+.img{
+    width: 78rem;
+    height: 27rem;
+}
+.img2{
+    width:78rem;
+    height: 45rem;
+}
+.img3{
+
+    height: 50rem;
+}
+.img4{
+    width: 25rem;
+}
+.img5{
+   width: 25rem;
+}
+
+li{
+    color: gray;
+    list-style: none;
+
+}
+
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+.nav li {
+    flex-direction: initial;
+    padding: 30px;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.grid{
+     display: grid;
+     grid-template-columns: repeat(6 1fr);
+     grid-template-rows: 1fr 1fr 2fr;
+}
+.gridIndex{
+     display: grid;
+     grid-template-areas: 
+          "header header"
+          "main main"
+         "footer footer";
+     grid-template-columns: 50% 50%;
+     grid-template-rows: auto auto; }
+header{
+     grid-area:header;
+     display: flex;
+     justify-content: space-between;
+}
+main{grid-area:main;}
+footer{
+     grid-area:footer;
+     display: flex;
+      padding: 20px;
+     flex-wrap: wrap;
+     justify-content: space-around;
+}
+.gridMain{
+     display: grid;
+     grid-template-areas: 
+         "Titulo Titulo"
+         "img TablaIndex";
+     grid-template-columns: repeat(2, 50%);
+     grid-template-rows: repeat(4, auto);
+}
+.Titulo{grid-area:Titulo;}
+.img{grid-area:img;width: 100%;}
+.Textosubtitulo{Textosubtitulo}
+.Textoindex{Textoindex}
+header{
+     grid-area: header;
+     display: flex;
+     padding: 30px;
+    justify-content: space-between;
+}
+main{
+     grid-area:main;
+}
+footer{
+     grid-area: footer;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+ }
+
+.gridmainproductos{
+    display: grid;
+    grid-template-areas: 
+    "Titulo Titulo"
+    "Tabla1 Tabla2" ;
+    grid-template-columns: repeat(2, 50%);
+}
+.Tabla1{grid-area:Tabla1;width: 80%;}
+.Tabla2{grid-area:Tabla2; width: 80%;}
+
+ .gridNosotrosmain{
+    display: grid;
+    grid-template-areas:
+    "Titulo Titulo"
+    "Fotovieja Fotovieja"
+    "Fotoactual TablaNosotros";
+    grid-template-columns: repeat(2 ,50%);  
+}
+ .Fotovieja{
+    grid-area: Fotovieja;width: 100%;
+ }
+ .Fotoactual{
+    grid-area: Fotoactual;width: 100%; 
+ }
+ .TablaNosotros{
+    grid-area: TablaNosotros;
+ }
